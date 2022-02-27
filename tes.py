@@ -22,9 +22,8 @@ for i in range(len(data.target_names)):
     bucket = bucket.iloc[:, [0, 1]].values
     hull = ConvexHull(bucket)  # bagian ini diganti dengan hasil implementasi
     plt.scatter(bucket[:, 0], bucket[:, 1], label=data.target_names[i])
-    print(hull.simplices[0])
+    print(hull.simplices)
     for simplex in hull.simplices:
-        print(simplex)
         # Simple disini isinya pasangan urutan titik di bucket
         # pasangan tersebut akan dihubungkan garis/diplotkan
         plt.plot(bucket[simplex, 0], bucket[simplex, 1], colors[i])
