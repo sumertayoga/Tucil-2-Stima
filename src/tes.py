@@ -6,11 +6,12 @@ import pandas as pd
 from sklearn import datasets
 
 
-data = datasets.load_iris()
+data = datasets.load_wine()
 # create a DataFrame
 df = pd.DataFrame(data.data, columns=data.feature_names)
 df['Target'] = pd.DataFrame(data.target)
 df.head()
+print(df)
 
 plt.figure(figsize=(10, 6))
 colors = ['b', 'r', 'g']
