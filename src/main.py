@@ -1,26 +1,25 @@
-# visualisasi hasil ConvexHull
+# Berikut merupakan contoh visualisasi hasil convexHull
 import matplotlib.pyplot as plt
-from scipy.spatial import ConvexHull
 import numpy as np
 import pandas as pd
 from sklearn import datasets
 import myConvexHull as ch
 
 
-data = datasets.load_wine()
+data = datasets.load_iris()
 # create a DataFrame
 df = pd.DataFrame(data.data, columns=data.feature_names)
 df['Target'] = pd.DataFrame(data.target)
 df.head()
-print(df)
 plt.figure(figsize=(10, 6))
 colors = ['b', 'r', 'g']
-plt.title('Color Intensity vs Hue')
-plt.xlabel(data.feature_names[9])
-plt.ylabel(data.feature_names[10])
+plt.title('Sepal Length vs Sepal Width')
+plt.xlabel(data.feature_names[0])
+plt.ylabel(data.feature_names[1])
 for i in range(len(data.target_names)):
     bucket = df[df['Target'] == i]
-    bucket = bucket.iloc[:, [9, 10]].values
+    print(bucket)
+    bucket = bucket.iloc[:, [0, 1]].values
     # bagian ini diganti dengan hasil implementasi
     hull = ch.convexHull(bucket)
     plt.scatter(bucket[:, 0], bucket[:, 1], label=data.target_names[i])
