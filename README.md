@@ -4,7 +4,7 @@
 
 Program yang dibuat adalah sebuah pustaka myConvexHull yang didalamnya terdapat fungsi untuk menyelesaikan permasalahan Convex Hull dari data dua dimensi yang diberikan. Penyelesaian permasalahan Convex Hull ini menggunakan Algoritma Divide and Conquer.
 
-# Requierement
+# Requirement
 
 1. Python (kalau bisa versi terbaru)
 2. Jupyter Notebook
