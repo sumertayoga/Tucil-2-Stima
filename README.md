@@ -23,7 +23,9 @@ Cara 1:
 7. Tampilkan diagram dengan plt.show
 
 Cara 2:
-Cara kedua sama persis seperti cara pertama tetapi dilakukan di myConvexHull.ipynb tetapi tidak perlu mengimport myConvexHull dan jika membuat code visualisasi di kotak yang berbeda, pastikan kotak yang berisi fungsi convexHull juga di-run
+Cara kedua sama persis seperti cara pertama tetapi dilakukan di myConvexHull.ipynb dan jika dilakukan di file myConvexHull.ipynb tidak perlu melakukan import myConvexHull.
+
+Contoh penggunaan dengan cara 1 dapat dilihat di file main.py, sedangkan yang cara 2 dapat dilihat di myConvexHull.ipynb
 
 # Author
 

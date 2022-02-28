@@ -5,9 +5,8 @@ import pandas as pd
 from sklearn import datasets
 import myConvexHull as ch
 
-
-data = datasets.load_iris()
 # create a DataFrame
+data = datasets.load_iris()
 df = pd.DataFrame(data.data, columns=data.feature_names)
 df['Target'] = pd.DataFrame(data.target)
 df.head()
