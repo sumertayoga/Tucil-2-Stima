@@ -12,6 +12,7 @@ Program yang dibuat adalah sebuah pustaka myConvexHull yang didalamnya terdapat 
 # Langkah Penggunaan
 
 Terdapat dua metode penggunaan yang bisa dilakukan yang pertama dengan mengimport myConvexHull dan kedua dengan mengunakan myConvexHull.ipynb
+
 Cara 1:
 
 1. Import library yang dibutuhkan yaitu matplotlib, numpy, pandas, sklearn dan myConvexHull
